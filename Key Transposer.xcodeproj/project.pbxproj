@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE460CF225EC5F0700715D03 /* Key_TransposerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE460CF125EC5F0700715D03 /* Key_TransposerApp.swift */; };
+		CE460CF425EC5F0700715D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE460CF325EC5F0700715D03 /* ContentView.swift */; };
+		CE460CF625EC5F0800715D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE460CF525EC5F0800715D03 /* Assets.xcassets */; };
+		CE460CF925EC5F0800715D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE460CF825EC5F0800715D03 /* Preview Assets.xcassets */; };
+		CE460D0425EC5F0800715D03 /* Key_TransposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE460D0325EC5F0800715D03 /* Key_TransposerTests.swift */; };
+		CE460D0F25EC5F0800715D03 /* Key_TransposerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE460D0E25EC5F0800715D03 /* Key_TransposerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE460D0025EC5F0800715D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE460CE625EC5F0700715D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE460CED25EC5F0700715D03;
+			remoteInfo = "Key Transposer";
+		};
+		CE460D0B25EC5F0800715D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE460CE625EC5F0700715D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE460CED25EC5F0700715D03;
+			remoteInfo = "Key Transposer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE460CEE25EC5F0700715D03 /* Key Transposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Key Transposer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE460CF125EC5F0700715D03 /* Key_TransposerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_TransposerApp.swift; sourceTree = "<group>"; };
+		CE460CF325EC5F0700715D03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE460CF525EC5F0800715D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE460CF825EC5F0800715D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE460CFA25EC5F0800715D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE460CFF25EC5F0800715D03 /* Key TransposerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Key TransposerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE460D0325EC5F0800715D03 /* Key_TransposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_TransposerTests.swift; sourceTree = "<group>"; };
+		CE460D0525EC5F0800715D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE460D0A25EC5F0800715D03 /* Key TransposerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Key TransposerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE460D0E25EC5F0800715D03 /* Key_TransposerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_TransposerUITests.swift; sourceTree = "<group>"; };
+		CE460D1025EC5F0800715D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE460CEB25EC5F0700715D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE460CFC25EC5F0800715D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE460D0725EC5F0800715D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE460CE525EC5F0700715D03 = {
+			isa = PBXGroup;
+			children = (
+				CE460CF025EC5F0700715D03 /* Key Transposer */,
+				CE460D0225EC5F0800715D03 /* Key TransposerTests */,
+				CE460D0D25EC5F0800715D03 /* Key TransposerUITests */,
+				CE460CEF25EC5F0700715D03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE460CEF25EC5F0700715D03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE460CEE25EC5F0700715D03 /* Key Transposer.app */,
+				CE460CFF25EC5F0800715D03 /* Key TransposerTests.xctest */,
+				CE460D0A25EC5F0800715D03 /* Key TransposerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE460CF025EC5F0700715D03 /* Key Transposer */ = {
+			isa = PBXGroup;
+			children = (
+				CE460CF125EC5F0700715D03 /* Key_TransposerApp.swift */,
+				CE460CF325EC5F0700715D03 /* ContentView.swift */,
+				CE460CF525EC5F0800715D03 /* Assets.xcassets */,
+				CE460CFA25EC5F0800715D03 /* Info.plist */,
+				CE460CF725EC5F0800715D03 /* Preview Content */,
+			);
+			path = "Key Transposer";
+			sourceTree = "<group>";
+		};
+		CE460CF725EC5F0800715D03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE460CF825EC5F0800715D03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE460D0225EC5F0800715D03 /* Key TransposerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE460D0325EC5F0800715D03 /* Key_TransposerTests.swift */,
+				CE460D0525EC5F0800715D03 /* Info.plist */,
+			);
+			path = "Key TransposerTests";
+			sourceTree = "<group>";
+		};
+		CE460D0D25EC5F0800715D03 /* Key TransposerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE460D0E25EC5F0800715D03 /* Key_TransposerUITests.swift */,
+				CE460D1025EC5F0800715D03 /* Info.plist */,
+			);
+			path = "Key TransposerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE460CED25EC5F0700715D03 /* Key Transposer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE460D1325EC5F0800715D03 /* Build configuration list for PBXNativeTarget "Key Transposer" */;
+			buildPhases = (
+				CE460CEA25EC5F0700715D03 /* Sources */,
+				CE460CEB25EC5F0700715D03 /* Frameworks */,
+				CE460CEC25EC5F0700715D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Key Transposer";
+			productName = "Key Transposer";
+			productReference = CE460CEE25EC5F0700715D03 /* Key Transposer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE460CFE25EC5F0800715D03 /* Key TransposerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE460D1625EC5F0800715D03 /* Build configuration list for PBXNativeTarget "Key TransposerTests" */;
+			buildPhases = (
+				CE460CFB25EC5F0800715D03 /* Sources */,
+				CE460CFC25EC5F0800715D03 /* Frameworks */,
+				CE460CFD25EC5F0800715D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE460D0125EC5F0800715D03 /* PBXTargetDependency */,
+			);
+			name = "Key TransposerTests";
+			productName = "Key TransposerTests";
+			productReference = CE460CFF25EC5F0800715D03 /* Key TransposerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE460D0925EC5F0800715D03 /* Key TransposerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE460D1925EC5F0800715D03 /* Build configuration list for PBXNativeTarget "Key TransposerUITests" */;
+			buildPhases = (
+				CE460D0625EC5F0800715D03 /* Sources */,
+				CE460D0725EC5F0800715D03 /* Frameworks */,
+				CE460D0825EC5F0800715D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE460D0C25EC5F0800715D03 /* PBXTargetDependency */,
+			);
+			name = "Key TransposerUITests";
+			productName = "Key TransposerUITests";
+			productReference = CE460D0A25EC5F0800715D03 /* Key TransposerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE460CE625EC5F0700715D03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CE460CED25EC5F0700715D03 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CE460CFE25EC5F0800715D03 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CE460CED25EC5F0700715D03;
+					};
+					CE460D0925EC5F0800715D03 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CE460CED25EC5F0700715D03;
+					};
+				};
+			};
+			buildConfigurationList = CE460CE925EC5F0700715D03 /* Build configuration list for PBXProject "Key Transposer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE460CE525EC5F0700715D03;
+			productRefGroup = CE460CEF25EC5F0700715D03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE460CED25EC5F0700715D03 /* Key Transposer */,
+				CE460CFE25EC5F0800715D03 /* Key TransposerTests */,
+				CE460D0925EC5F0800715D03 /* Key TransposerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE460CEC25EC5F0700715D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE460CF925EC5F0800715D03 /* Preview Assets.xcassets in Resources */,
+				CE460CF625EC5F0800715D03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE460CFD25EC5F0800715D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE460D0825EC5F0800715D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE460CEA25EC5F0700715D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE460CF425EC5F0700715D03 /* ContentView.swift in Sources */,
+				CE460CF225EC5F0700715D03 /* Key_TransposerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE460CFB25EC5F0800715D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE460D0425EC5F0800715D03 /* Key_TransposerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE460D0625EC5F0800715D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE460D0F25EC5F0800715D03 /* Key_TransposerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE460D0125EC5F0800715D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE460CED25EC5F0700715D03 /* Key Transposer */;
+			targetProxy = CE460D0025EC5F0800715D03 /* PBXContainerItemProxy */;
+		};
+		CE460D0C25EC5F0800715D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE460CED25EC5F0700715D03 /* Key Transposer */;
+			targetProxy = CE460D0B25EC5F0800715D03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE460D1125EC5F0800715D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE460D1225EC5F0800715D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE460D1425EC5F0800715D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Key Transposer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Key Transposer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nick-Simone.Key-Transposer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE460D1525EC5F0800715D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Key Transposer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Key Transposer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nick-Simone.Key-Transposer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE460D1725EC5F0800715D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Key TransposerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nick-Simone.Key-TransposerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Key Transposer.app/Key Transposer";
+			};
+			name = Debug;
+		};
+		CE460D1825EC5F0800715D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Key TransposerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nick-Simone.Key-TransposerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Key Transposer.app/Key Transposer";
+			};
+			name = Release;
+		};
+		CE460D1A25EC5F0800715D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Key TransposerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nick-Simone.Key-TransposerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Key Transposer";
+			};
+			name = Debug;
+		};
+		CE460D1B25EC5F0800715D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Key TransposerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nick-Simone.Key-TransposerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Key Transposer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE460CE925EC5F0700715D03 /* Build configuration list for PBXProject "Key Transposer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE460D1125EC5F0800715D03 /* Debug */,
+				CE460D1225EC5F0800715D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE460D1325EC5F0800715D03 /* Build configuration list for PBXNativeTarget "Key Transposer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE460D1425EC5F0800715D03 /* Debug */,
+				CE460D1525EC5F0800715D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE460D1625EC5F0800715D03 /* Build configuration list for PBXNativeTarget "Key TransposerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE460D1725EC5F0800715D03 /* Debug */,
+				CE460D1825EC5F0800715D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE460D1925EC5F0800715D03 /* Build configuration list for PBXNativeTarget "Key TransposerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE460D1A25EC5F0800715D03 /* Debug */,
+				CE460D1B25EC5F0800715D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE460CE625EC5F0700715D03 /* Project object */;
+}
