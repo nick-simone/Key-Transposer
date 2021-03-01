@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .center) {
+            Text("Key Transposer")
+                .padding()
+            HStack(alignment: .center){
+            }
+            Button ("Transpose") {
+            }
+            .accentColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 
