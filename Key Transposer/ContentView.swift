@@ -16,28 +16,40 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Label("Chord Progression", systemImage: "")
-            HStack {
-                Picker(selection: .constant(1)/*@END_MENU_TOKEN@*/, label: /*@START_MENU_TOKEN@*/Text("Picker")) {
-                    Text("A").tag(1)
-                    Text("B").tag(2)
-                    Text("C").tag(2)
-                    Text("D").tag(2)
-                    Text("E").tag(2)
-                    Text("F").tag(2)
-                    Text("G").tag(2)
-                }.frame(width: 50 * UIScreen.main.bounds.width/100)
-                Picker(selection: .constant(1)/*@END_MENU_TOKEN@*/, label: /*@START_MENU_TOKEN@*/Text("Picker")) {
-                    Text("A").tag(1)
-                    Text("B").tag(2)
-                    Text("C").tag(2)
-                    Text("D").tag(2)
-                    Text("E").tag(2)
-                    Text("F").tag(2)
-                    Text("G").tag(2)
-                }
-                .frame(width: 50 * UIScreen.main.bounds.width/100)
-                
-            }
+//            HStack {
+//                Picker(selection: .constant(4)/*@END_MENU_TOKEN@*/, label: /*@START_MENU_TOKEN@*/Text("Picker")) {
+//                    Text("A").tag(1)
+//                    Text("B").tag(2)
+//                    Text("C").tag(3)
+//                    Text("D").tag(4)
+//                    Text("E").tag(5)
+//                    Text("F").tag(6)
+//                    Text("G").tag(7)
+//                }.frame(width: 33 * UIScreen.main.bounds.width/100)
+//                Picker(selection: .constant(4)/*@END_MENU_TOKEN@*/, label: /*@START_MENU_TOKEN@*/Text("Picker")) {
+//                    Text("A").tag(1)
+//                    Text("B").tag(2)
+//                    Text("C").tag(3)
+//                    Text("D").tag(4)
+//                    Text("E").tag(5)
+//                    Text("F").tag(6)
+//                    Text("G").tag(7)
+//                }
+//                .padding()
+//                .frame(width: 33 * UIScreen.main.bounds.width/100)
+//                Picker(selection: .constant(4)/*@END_MENU_TOKEN@*/, label: /*@START_MENU_TOKEN@*/Text("Picker")) {
+//                    Text("A").tag(1)
+//                    Text("B").tag(2)
+//                    Text("C").tag(3)
+//                    Text("D").tag(4)
+//                    Text("E").tag(5)
+//                    Text("F").tag(6)
+//                    Text("G").tag(7)
+//                }
+//                .padding()
+//                .frame(width: 33 * UIScreen.main.bounds.width/100)
+//            }
+            ChordPickerViewList(6)
             Spacer().frame(height: 20)
             Label("Desired Key", systemImage: "")
             Spacer().frame(height: 20)
