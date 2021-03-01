@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Key Transposer")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .multilineTextAlignment(.center)
             .padding()
     }
 }
