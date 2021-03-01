@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ChordPickerViewList : View {
+struct ChordPickerContainerView : View {
     var numPickers:Int
     var pickerWidth:Double
     var chordPickerViews:[ChordPickerView] = []

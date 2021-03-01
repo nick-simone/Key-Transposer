@@ -49,7 +49,7 @@ struct ContentView: View {
 //                .padding()
 //                .frame(width: 33 * UIScreen.main.bounds.width/100)
 //            }
-            ChordPickerViewList(6)
+            ChordPickerContainerView(2)
             Spacer().frame(height: 20)
             Label("Desired Key", systemImage: "")
             Spacer().frame(height: 20)
