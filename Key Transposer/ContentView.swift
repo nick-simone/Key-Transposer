@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let DEFAULT_CHORD_NUM = 4
+let DEFAULT_CHORD_NUM = 6
 
 struct ContentView: View {
     

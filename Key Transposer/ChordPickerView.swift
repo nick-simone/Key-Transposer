@@ -18,7 +18,7 @@ struct ChordPickerView: View {
             ForEach(0..<self.chords.count) {
                 Text(self.chords[$0])
             }
-        }.frame(width: CGFloat(self.width)).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+        }.frame(width: CGFloat(self.width)).clipped()
     }
     
     init(width:Double){

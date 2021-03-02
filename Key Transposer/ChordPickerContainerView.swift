@@ -14,11 +14,11 @@ struct ChordPickerContainerView : View {
     var chordPickerViews:[ChordPickerView] = []
 
     var body: some View {
-        HStack {
+        HStack(alignment: .center, spacing: 10, content: {
             ForEach(0..<self.numPickers){
                 chordPickerViews[$0]
             }
-        }
+        }).frame(width: CGFloat(UIScreen.main.bounds.width)).clipped()
     }
     
     init(_ numPickers:Int){
