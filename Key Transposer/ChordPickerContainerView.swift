@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 struct ChordPickerContainerView : View {
-    var numPickers:Int
-    var pickerWidth:Double
+    var numPickers:Int = 0
+    var pickerWidth:Double = 0
     var chordPickerViews:[ChordPickerView] = []
 
     var body: some View {
@@ -32,13 +32,18 @@ struct ChordPickerContainerView : View {
     mutating func addPicker() {
         self.numPickers += 1
         self.pickerWidth = Double((100/numPickers) * (Int(UIScreen.main.bounds.width) / 100))
-        // do add
+        self.chordPickerViews.append(ChordPickerView(width: self.pickerWidth))
+        for var item in self.chordPickerViews {
+            item.updateWidth(width: self.pickerWidth)
+        }
     }
     
     mutating func removePicker() {
         self.numPickers -= 1
         self.pickerWidth = Double((100/numPickers) * (Int(UIScreen.main.bounds.width) / 100))
-        // do remove
+        for var item in self.chordPickerViews {
+            item.updateWidth(width: self.pickerWidth)
+        }
     }
 }
 
