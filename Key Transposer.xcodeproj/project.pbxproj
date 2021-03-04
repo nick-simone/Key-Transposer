@@ -10,7 +10,6 @@
 		CE13034D25ED9D3E006B7666 /* ChordPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13034C25ED9D3E006B7666 /* ChordPickerView.swift */; };
 		CE13035A25EDA2BC006B7666 /* ChordPickerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13035925EDA2BC006B7666 /* ChordPickerContainerView.swift */; };
 		CE13036A25EDCDA3006B7666 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13036925EDCDA3006B7666 /* Constants.swift */; };
-		CE83FEB025F07A8500676D3E /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83FEAF25F07A8500676D3E /* Key.swift */; };
 		CE9A990925ED86C20023B08A /* Key_TransposerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */; };
 		CE9A990B25ED86C20023B08A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990A25ED86C20023B08A /* ContentView.swift */; };
 		CE9A990D25ED86C50023B08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A990C25ED86C50023B08A /* Assets.xcassets */; };
@@ -40,7 +39,6 @@
 		CE13034C25ED9D3E006B7666 /* ChordPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordPickerView.swift; sourceTree = "<group>"; };
 		CE13035925EDA2BC006B7666 /* ChordPickerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordPickerContainerView.swift; sourceTree = "<group>"; };
 		CE13036925EDCDA3006B7666 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CE83FEAF25F07A8500676D3E /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		CE9A990525ED86C20023B08A /* Key Transposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Key Transposer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_TransposerApp.swift; sourceTree = "<group>"; };
 		CE9A990A25ED86C20023B08A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				CE13034C25ED9D3E006B7666 /* ChordPickerView.swift */,
 				CE13035925EDA2BC006B7666 /* ChordPickerContainerView.swift */,
 				CE13036925EDCDA3006B7666 /* Constants.swift */,
-				CE83FEAF25F07A8500676D3E /* Key.swift */,
 			);
 			path = "Key Transposer";
 			sourceTree = "<group>";
@@ -271,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE83FEB025F07A8500676D3E /* Key.swift in Sources */,
 				CE13036A25EDCDA3006B7666 /* Constants.swift in Sources */,
 				CE9A990B25ED86C20023B08A /* ContentView.swift in Sources */,
 				CE13035A25EDA2BC006B7666 /* ChordPickerContainerView.swift in Sources */,

@@ -12,7 +12,9 @@ struct ContentView: View {
     var chordPickerContainerView:ChordPickerContainerView!
     
     var keyPicker:ChordPickerView!
-        
+    
+    @State var selectedKey:Int = Constants.DEFAULT_KEY
+    
     var body: some View {
         VStack {
             Text("Key Transposer")
@@ -26,7 +28,15 @@ struct ContentView: View {
             Label("Key", systemImage: "")
             Spacer().frame(height: 20)
             // Key Section - Picker
-            keyPicker
+            Picker(selection: $selectedKey, label: Text("Picker")) {
+                ForEach(0..<Constants.KEYS.count) { num in
+                    Text(Constants.KEYS[num]).tag(num)/*.font(.system(size: 15))*/
+                }
+            }
+            .onChange(of: self.selectedKey, perform: { value in
+                self.chordPickerContainerView.changeKey(chordIndexChange: self.selectedKey)
+                print(self.selectedKey)
+            })
         }
     }
     

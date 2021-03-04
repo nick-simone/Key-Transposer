@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct ChordPickerView: View {
-    @State var selectedChord:Int = Constants.DEFAULT_KEY
+    @State private var selectedChord:Int = Constants.DEFAULT_KEY
     let chords = Constants.KEYS
     var width:Double!
     var type:String!
@@ -21,14 +21,6 @@ struct ChordPickerView: View {
             }
         }
         .frame(width: CGFloat(self.width)).clipped()
-        .onChange(of: self.selectedChord, perform: { newKey in
-            if (self.type == "Key"){
-                //key.currentKey = self.selectedChord
-            }
-            else {
-                //self.selectedChord = key.currentKey
-            }
-        })
     }
     
     init(width:Double, type:String = "Chord"){

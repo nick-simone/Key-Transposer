@@ -47,7 +47,7 @@ struct ChordPickerContainerView : View {
         }
     }
     
-    mutating func changeKey(chordIndexChange:Int) {
+    func changeKey(chordIndexChange:Int) {
         for var picker in chordPickerViews {
             picker.selectChord(chordIndexChange: chordIndexChange)
         }
