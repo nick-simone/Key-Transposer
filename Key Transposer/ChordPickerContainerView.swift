@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 struct ChordPickerContainerView : View {
-    var numPickers:Int = 0
-    var pickerWidth:Double = 0
-    var chordPickerViews:[ChordPickerView] = []
+    var numPickers:Int!
+    var pickerWidth:Double!
+    var chordPickerViews:[ChordPickerView]!
 
     var body: some View {
         HStack(alignment: .center, spacing: 10, content: {
@@ -21,9 +21,10 @@ struct ChordPickerContainerView : View {
         }).frame(width: CGFloat(UIScreen.main.bounds.width)).clipped()
     }
     
-    init(_ numPickers:Int){
+    init(numPickers:Int){
         self.numPickers = numPickers
         self.pickerWidth = Double((100/numPickers) * (Int(UIScreen.main.bounds.width) / 100))
+        self.chordPickerViews = []
         for _ in 1...numPickers {
             chordPickerViews.append(ChordPickerView(width: self.pickerWidth))
         }
@@ -45,5 +46,11 @@ struct ChordPickerContainerView : View {
             item.updateWidth(width: self.pickerWidth)
         }
     }
-}
+    
+    mutating func changeKey(chordIndexChange:Int) {
+        for var picker in chordPickerViews {
+            picker.selectChord(chordIndexChange: chordIndexChange)
+        }
+    }
 
+}

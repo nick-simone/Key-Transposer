@@ -9,25 +9,43 @@ import Foundation
 import SwiftUI
 
 struct ChordPickerView: View {
+    @State var selectedChord:Int = Constants.DEFAULT_KEY
     let chords = Constants.KEYS
-    @State var selectedChord:Int = 2
-    var width:Double = 0
+    var width:Double!
+    var type:String!
     
     var body: some View {
-        Picker(selection: $selectedChord, label: Text("Picker")) {
-            ForEach(0..<self.chords.count) {
-                Text(self.chords[$0])/*.font(.system(size: 15))*/
+        Picker(selection: self.$selectedChord, label: Text("Picker")) {
+            ForEach(0..<self.chords.count) { num in
+                Text(self.chords[num]).tag(num)/*.font(.system(size: 15))*/
             }
-        }.frame(width: CGFloat(self.width)).clipped()
+        }
+        .frame(width: CGFloat(self.width)).clipped()
+        .onChange(of: self.selectedChord, perform: { newKey in
+            if (self.type == "Key"){
+                //key.currentKey = self.selectedChord
+            }
+            else {
+                //self.selectedChord = key.currentKey
+            }
+        })
     }
     
-    init(width:Double){
+    init(width:Double, type:String = "Chord"){
         self.width = width
-        self.selectedChord = 4
+        self.type = type
     }
     
     mutating func updateWidth(width:Double){
         self.width = width
+    }
+    
+    mutating func selectChord(chordIndexChange:Int) {
+        self.selectedChord += chordIndexChange
+    }
+    
+    func getSelectedChord() -> Int{
+        return self.selectedChord
     }
 }
 

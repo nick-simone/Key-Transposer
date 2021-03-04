@@ -9,4 +9,6 @@ import Foundation
 
 struct Constants {
     static let KEYS = ["A", "A♯", "B", "C", "C♯", "D", "D♯", "E", "F", "F♯", "G", "G♯"]
+    static let DEFAULT_KEY = 4
+    static let DEFAULT_NUM_CHORDS = 4
 }

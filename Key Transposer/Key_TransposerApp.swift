@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Key_TransposerApp: App {
+    @StateObject var key = Key()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(key)
         }
     }
+    
 }

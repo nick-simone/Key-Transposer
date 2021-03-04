@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-let DEFAULT_CHORD_NUM = 6
-
 struct ContentView: View {
     
-    var chordPickerContainerView:ChordPickerContainerView = ChordPickerContainerView(DEFAULT_CHORD_NUM)
+    var chordPickerContainerView:ChordPickerContainerView!
     
-    var keyPicker:ChordPickerView = ChordPickerView(width: Double(UIScreen.main.bounds.width))
+    var keyPicker:ChordPickerView!
         
     var body: some View {
         VStack {
@@ -30,6 +28,11 @@ struct ContentView: View {
             // Key Section - Picker
             keyPicker
         }
+    }
+    
+    init(){
+        self.chordPickerContainerView = ChordPickerContainerView(numPickers: Constants.DEFAULT_NUM_CHORDS)
+        self.keyPicker = ChordPickerView(width: Double(UIScreen.main.bounds.width), type: "Key")
     }
 }
 
