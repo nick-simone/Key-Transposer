@@ -11,7 +11,7 @@ struct ContentView: View {
 
     @State private var selectedKey:Int = Constants.DEFAULT_KEY
     
-    @State private var selectedChords:[Int] = [0, 0, 0, 0, 0, 0]
+    @State private var selectedChords:[Int] = [Constants.DEFAULT_KEY, Constants.DEFAULT_KEY, Constants.DEFAULT_KEY, Constants.DEFAULT_KEY, Constants.DEFAULT_KEY, Constants.DEFAULT_KEY]
     
     var numChords:Int!
     
@@ -34,6 +34,9 @@ struct ContentView: View {
                         }
                     }
                 }.frame(width: CGFloat(self.chordPickerWidth)).clipped()
+                .onChange(of: self.selectedChords[0], perform: { value in
+                    self.selectedKey = self.selectedChords[0]
+                })
             }).frame(width: CGFloat(UIScreen.main.bounds.width)).clipped()
             
             Spacer().frame(height: 20)
