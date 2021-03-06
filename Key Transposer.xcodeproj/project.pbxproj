@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE13034D25ED9D3E006B7666 /* ChordPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13034C25ED9D3E006B7666 /* ChordPickerView.swift */; };
-		CE13035A25EDA2BC006B7666 /* ChordPickerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13035925EDA2BC006B7666 /* ChordPickerContainerView.swift */; };
 		CE13036A25EDCDA3006B7666 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13036925EDCDA3006B7666 /* Constants.swift */; };
 		CE9A990925ED86C20023B08A /* Key_TransposerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */; };
 		CE9A990B25ED86C20023B08A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990A25ED86C20023B08A /* ContentView.swift */; };
@@ -36,8 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE13034C25ED9D3E006B7666 /* ChordPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordPickerView.swift; sourceTree = "<group>"; };
-		CE13035925EDA2BC006B7666 /* ChordPickerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordPickerContainerView.swift; sourceTree = "<group>"; };
 		CE13036925EDCDA3006B7666 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE9A990525ED86C20023B08A /* Key Transposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Key Transposer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_TransposerApp.swift; sourceTree = "<group>"; };
@@ -106,8 +102,6 @@
 				CE9A990C25ED86C50023B08A /* Assets.xcassets */,
 				CE9A991125ED86C50023B08A /* Info.plist */,
 				CE9A990E25ED86C50023B08A /* Preview Content */,
-				CE13034C25ED9D3E006B7666 /* ChordPickerView.swift */,
-				CE13035925EDA2BC006B7666 /* ChordPickerContainerView.swift */,
 				CE13036925EDCDA3006B7666 /* Constants.swift */,
 			);
 			path = "Key Transposer";
@@ -270,8 +264,6 @@
 			files = (
 				CE13036A25EDCDA3006B7666 /* Constants.swift in Sources */,
 				CE9A990B25ED86C20023B08A /* ContentView.swift in Sources */,
-				CE13035A25EDA2BC006B7666 /* ChordPickerContainerView.swift in Sources */,
-				CE13034D25ED9D3E006B7666 /* ChordPickerView.swift in Sources */,
 				CE9A990925ED86C20023B08A /* Key_TransposerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

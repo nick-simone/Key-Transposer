@@ -45,16 +45,17 @@ struct ContentView: View {
                     Text(Constants.KEYS[i]).tag(i)
                 }
             }.onChange(of: self.selectedKey, perform: { _ in
-                var prevChord:Int
-                for i in 0..<self.selectedChords.count {
-                    if (i == 0){
-                        self.selectedChords[i] = self.selectedKey
+                let oldKey = self.selectedChords[0]
+                var newChord:Int
+                for i in 0..<self.numChords {
+                    newChord = self.selectedChords[i] + (self.selectedKey - oldKey)
+                    if newChord > Constants.KEYS.count { // Number too high
+                        newChord -= Constants.KEYS.count
                     }
-                    else {
-                        prevChord = selectedChords[i]
-                        self.selectedChords[i] += (self.selectedKey - prevChord)
+                    else if newChord < 0 { // Number too low
+                        newChord += Constants.KEYS.count
                     }
-                    print("picker: \(i), chord: \(self.selectedChords[i])")
+                    self.selectedChords[i] = newChord
                 }
             })
         }
