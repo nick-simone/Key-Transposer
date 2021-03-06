@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var selectedKey:Int = Constants.DEFAULT_KEY
     
-    var chordPickerContainerView:ChordPickerContainerView!
+    @State private var selectedChords:[Int] = [Constants.DEFAULT_KEY * 4]
     
-    var keyPicker:ChordPickerView!
+    var numChords:Int!
     
-    @State var selectedKey:Int = Constants.DEFAULT_KEY
+    var chordPickerWidth:Double!
     
     var body: some View {
         VStack {
@@ -23,27 +25,42 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Label("Chord Progression", systemImage: "")
-            self.chordPickerContainerView
+            HStack(alignment: .center, spacing: 10, content: {
+                // First Chord Picker
+                Picker(selection: $selectedKey, label: Text("Picker")) {
+                    ForEach(0..<Constants.KEYS.count) { i in
+                        Text(Constants.KEYS[i]).tag(i)
+                    }
+                }.frame(width: CGFloat(self.chordPickerWidth)).clipped()
+            
+                // Generic Chord Pickers
+            
+                ForEach(0..<self.numChords - 1){ _ in
+                    Picker(selection: $selectedKey, label: Text("Picker")) {
+                        ForEach(0..<Constants.KEYS.count) { i in
+                            Text(Constants.KEYS[i]).tag(i)
+                        }
+                    }
+                }.frame(width: CGFloat(self.chordPickerWidth)).clipped()
+            }).frame(width: CGFloat(UIScreen.main.bounds.width)).clipped()
+            
             Spacer().frame(height: 20)
             Label("Key", systemImage: "")
             Spacer().frame(height: 20)
             // Key Section - Picker
             Picker(selection: $selectedKey, label: Text("Picker")) {
-                ForEach(0..<Constants.KEYS.count) { num in
-                    Text(Constants.KEYS[num]).tag(num)/*.font(.system(size: 15))*/
+                ForEach(0..<Constants.KEYS.count) { i in
+                    Text(Constants.KEYS[i]).tag(i)
                 }
             }
-            .onChange(of: self.selectedKey, perform: { value in
-                self.chordPickerContainerView.changeKey(chordIndexChange: self.selectedKey)
-                print(self.selectedKey)
-            })
         }
     }
     
-    init(){
-        self.chordPickerContainerView = ChordPickerContainerView(numPickers: Constants.DEFAULT_NUM_CHORDS)
-        self.keyPicker = ChordPickerView(width: Double(UIScreen.main.bounds.width), type: "Key")
+    init(_ numChords:Int = Constants.DEFAULT_NUM_CHORDS) {
+        self.numChords = numChords
+        self.chordPickerWidth = Double((100/numChords) * (Int(UIScreen.main.bounds.width) / 100))
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

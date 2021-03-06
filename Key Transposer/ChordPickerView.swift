@@ -15,12 +15,15 @@ struct ChordPickerView: View {
     var type:String!
     
     var body: some View {
-        Picker(selection: self.$selectedChord, label: Text("Picker")) {
-            ForEach(0..<self.chords.count) { num in
-                Text(self.chords[num]).tag(num)/*.font(.system(size: 15))*/
+        Picker(selection: $selectedChord, label: Text("Picker")) {
+            ForEach(0..<self.chords.count) { i in
+                Text(self.chords[i]).tag(i)
             }
         }
         .frame(width: CGFloat(self.width)).clipped()
+        .onChange(of: self.selectedChord, perform: { value in
+            print(self.selectedChord)
+        })
     }
     
     init(width:Double, type:String = "Chord"){
