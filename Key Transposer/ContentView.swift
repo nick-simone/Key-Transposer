@@ -11,7 +11,7 @@ struct ContentView: View {
 
     @State private var selectedKey:Int = Constants.DEFAULT_KEY
     
-    @State private var selectedChords:[Int] = [Constants.DEFAULT_KEY * 4]
+    @State private var selectedChords:[Int] = [0, 0, 0, 0, 0, 0]
     
     var numChords:Int!
     
@@ -26,17 +26,9 @@ struct ContentView: View {
                 .padding()
             Label("Chord Progression", systemImage: "")
             HStack(alignment: .center, spacing: 10, content: {
-                // First Chord Picker
-                Picker(selection: $selectedKey, label: Text("Picker")) {
-                    ForEach(0..<Constants.KEYS.count) { i in
-                        Text(Constants.KEYS[i]).tag(i)
-                    }
-                }.frame(width: CGFloat(self.chordPickerWidth)).clipped()
-            
                 // Generic Chord Pickers
-            
-                ForEach(0..<self.numChords - 1){ _ in
-                    Picker(selection: $selectedKey, label: Text("Picker")) {
+                ForEach(0..<self.numChords){ pickerNum in
+                    Picker(selection: $selectedChords[pickerNum], label: Text("Picker")) {
                         ForEach(0..<Constants.KEYS.count) { i in
                             Text(Constants.KEYS[i]).tag(i)
                         }
@@ -52,7 +44,19 @@ struct ContentView: View {
                 ForEach(0..<Constants.KEYS.count) { i in
                     Text(Constants.KEYS[i]).tag(i)
                 }
-            }
+            }.onChange(of: self.selectedKey, perform: { _ in
+                var prevChord:Int
+                for i in 0..<self.selectedChords.count {
+                    if (i == 0){
+                        self.selectedChords[i] = self.selectedKey
+                    }
+                    else {
+                        prevChord = selectedChords[i]
+                        self.selectedChords[i] += (self.selectedKey - prevChord)
+                    }
+                    print("picker: \(i), chord: \(self.selectedChords[i])")
+                }
+            })
         }
     }
     
@@ -60,7 +64,6 @@ struct ContentView: View {
         self.numChords = numChords
         self.chordPickerWidth = Double((100/numChords) * (Int(UIScreen.main.bounds.width) / 100))
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
