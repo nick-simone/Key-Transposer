@@ -8,10 +8,22 @@
 import SwiftUI
 struct ContentView: View {
     
-    var chordKeyView = ChordKeyView()
+    @State private var chordKeyView = ChordKeyView()
     
     var body: some View {
-        self.chordKeyView
+        VStack {
+            self.chordKeyView
+            HStack {
+                Button("Add Chord") {
+                    self.chordKeyView = ChordKeyView(self.chordKeyView.numChords + 1)
+                }
+                .disabled(self.chordKeyView.numChords > 5)
+                Button("Remove Chord"){
+                    self.chordKeyView = ChordKeyView(self.chordKeyView.numChords - 1)
+                }
+                .disabled(self.chordKeyView.numChords < 3)
+            }
+        }
     }
 }
 
