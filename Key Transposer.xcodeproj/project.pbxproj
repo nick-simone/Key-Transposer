@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE05859A25F4859900D2E289 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05859925F4859900D2E289 /* ContentView.swift */; };
 		CE13036A25EDCDA3006B7666 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13036925EDCDA3006B7666 /* Constants.swift */; };
 		CE9A990925ED86C20023B08A /* Key_TransposerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */; };
-		CE9A990B25ED86C20023B08A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990A25ED86C20023B08A /* ContentView.swift */; };
+		CE9A990B25ED86C20023B08A /* ChordKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A990A25ED86C20023B08A /* ChordKeyView.swift */; };
 		CE9A990D25ED86C50023B08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A990C25ED86C50023B08A /* Assets.xcassets */; };
 		CE9A991025ED86C50023B08A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A990F25ED86C50023B08A /* Preview Assets.xcassets */; };
 		CE9A991B25ED86C60023B08A /* Key_TransposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A991A25ED86C60023B08A /* Key_TransposerTests.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE05859925F4859900D2E289 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE13036925EDCDA3006B7666 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE9A990525ED86C20023B08A /* Key Transposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Key Transposer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_TransposerApp.swift; sourceTree = "<group>"; };
-		CE9A990A25ED86C20023B08A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE9A990A25ED86C20023B08A /* ChordKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordKeyView.swift; sourceTree = "<group>"; };
 		CE9A990C25ED86C50023B08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9A990F25ED86C50023B08A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE9A991125ED86C50023B08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				CE9A990825ED86C20023B08A /* Key_TransposerApp.swift */,
-				CE9A990A25ED86C20023B08A /* ContentView.swift */,
+				CE9A990A25ED86C20023B08A /* ChordKeyView.swift */,
 				CE9A990C25ED86C50023B08A /* Assets.xcassets */,
 				CE9A991125ED86C50023B08A /* Info.plist */,
 				CE9A990E25ED86C50023B08A /* Preview Content */,
 				CE13036925EDCDA3006B7666 /* Constants.swift */,
+				CE05859925F4859900D2E289 /* ContentView.swift */,
 			);
 			path = "Key Transposer";
 			sourceTree = "<group>";
@@ -263,7 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE13036A25EDCDA3006B7666 /* Constants.swift in Sources */,
-				CE9A990B25ED86C20023B08A /* ContentView.swift in Sources */,
+				CE9A990B25ED86C20023B08A /* ChordKeyView.swift in Sources */,
+				CE05859A25F4859900D2E289 /* ContentView.swift in Sources */,
 				CE9A990925ED86C20023B08A /* Key_TransposerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
