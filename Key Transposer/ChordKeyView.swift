@@ -27,7 +27,7 @@ struct ChordKeyView: View {
             Label("Chord Progression", systemImage: "")
             HStack(alignment: .center, spacing: 10, content: {
                 // Generic Chord Pickers
-                ForEach(0..<self.numChords){ pickerNum in
+                ForEach(0..<self.numChords, id: \.self){ pickerNum in
                     Picker(selection: $selectedChords[pickerNum], label: Text("Picker")) {
                         ForEach(0..<Constants.KEYS.count) { i in
                             Text(Constants.KEYS[i]).tag(i)
