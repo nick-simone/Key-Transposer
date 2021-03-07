@@ -18,13 +18,7 @@ struct ChordKeyView: View {
     var chordPickerWidth:Double!
     
     var body: some View {
-        VStack {
-            Text("Key Transposer")
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .multilineTextAlignment(.center)
-                .padding()
-            Label("Chord Progression", systemImage: "")
+        VStack (spacing: 0) {
             HStack(alignment: .center, spacing: 10, content: {
                 // Generic Chord Pickers
                 ForEach(0..<self.numChords, id: \.self){ pickerNum in
@@ -38,10 +32,7 @@ struct ChordKeyView: View {
                     self.selectedKey = self.selectedChords[0]
                 })
             }).frame(width: CGFloat(UIScreen.main.bounds.width)).clipped()
-            
-            Spacer().frame(height: 20)
-            Label("Key", systemImage: "")
-            Spacer().frame(height: 20)
+            Text("Key")
             // Key Section - Picker
             Picker(selection: $selectedKey, label: Text("Picker")) {
                 ForEach(0..<Constants.KEYS.count) { i in

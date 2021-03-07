@@ -11,18 +11,28 @@ struct ContentView: View {
     @State private var chordKeyView = ChordKeyView()
     
     var body: some View {
-        VStack {
-            self.chordKeyView
+        VStack (spacing: 0) {
+            Spacer().frame(height: 30)
+            Text("Key Transposer")
+                .font(.title)
+                .fontWeight(.heavy)
+                .multilineTextAlignment(.center)
+            Spacer().frame(height: 10)
+            Text("Chord Progression")
+            Spacer().frame(height: 10)
             HStack {
                 Button("Add Chord") {
                     self.chordKeyView = ChordKeyView(self.chordKeyView.numChords + 1)
                 }
+                .padding([.leading, .trailing])
                 .disabled(self.chordKeyView.numChords > 5)
                 Button("Remove Chord"){
                     self.chordKeyView = ChordKeyView(self.chordKeyView.numChords - 1)
                 }
+                .padding([.leading, .trailing])
                 .disabled(self.chordKeyView.numChords < 3)
             }
+            self.chordKeyView
         }
     }
 }
