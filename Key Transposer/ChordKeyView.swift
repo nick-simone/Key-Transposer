@@ -17,14 +17,16 @@ struct ChordKeyView: View {
     
     var chordPickerWidth:Double!
     
+    var chords:[String]!
+    
     var body: some View {
         VStack (spacing: 0) {
             HStack(alignment: .center, spacing: 10, content: {
                 // Generic Chord Pickers
                 ForEach(0..<self.numChords, id: \.self){ pickerNum in
                     Picker(selection: $selectedChords[pickerNum], label: Text("Picker")) {
-                        ForEach(0..<Constants.KEYS.count) { i in
-                            Text(Constants.KEYS[i]).tag(i)
+                        ForEach(0..<self.chords.count) { i in
+                            Text(self.chords[i]).tag(i)
                         }
                     }
                 }.frame(width: CGFloat(self.chordPickerWidth)).clipped()
@@ -35,19 +37,19 @@ struct ChordKeyView: View {
             Text("Key")
             // Key Section - Picker
             Picker(selection: $selectedKey, label: Text("Picker")) {
-                ForEach(0..<Constants.KEYS.count) { i in
-                    Text(Constants.KEYS[i]).tag(i)
+                ForEach(0..<self.chords.count) { i in
+                    Text(self.chords[i]).tag(i)
                 }
             }.onChange(of: self.selectedKey, perform: { _ in
                 let oldKey = self.selectedChords[0]
                 var newChord:Int
                 for i in 0..<self.numChords {
                     newChord = self.selectedChords[i] + (self.selectedKey - oldKey)
-                    if newChord > Constants.KEYS.count { // Number too high
-                        newChord -= Constants.KEYS.count
+                    if newChord > self.chords.count { // Number too high
+                        newChord -= self.chords.count
                     }
                     else if newChord < 0 { // Number too low
-                        newChord += Constants.KEYS.count
+                        newChord += self.chords.count
                     }
                     self.selectedChords[i] = newChord
                 }
@@ -55,9 +57,15 @@ struct ChordKeyView: View {
         }
     }
     
-    init(_ numChords:Int = Constants.DEFAULT_NUM_CHORDS) {
+    init(_ numChords:Int = Constants.DEFAULT_NUM_CHORDS, _ useSharps:Bool = true) {
         self.numChords = numChords
         self.chordPickerWidth = Double((100/numChords) * (Int(UIScreen.main.bounds.width) / 100))
+        if (useSharps){
+            self.chords = Constants.KEYS_SHARPS
+        }
+        else {
+            self.chords = Constants.KEYS_FLATS
+        }
     }
 }
 
