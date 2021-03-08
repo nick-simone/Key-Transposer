@@ -18,6 +18,7 @@ struct ContentView: View {
     
     var body: some View {
         ScrollView {
+            Spacer().frame(height: 20)
             VStack (spacing: 0) {
                 Text("Key Transposer")
                     .font(.title)
@@ -26,7 +27,7 @@ struct ContentView: View {
                 Spacer().frame(height: 10)
                 DisclosureGroup("Settings", isExpanded: $settingsExpanded){
                     VStack (spacing: 20) {
-                        Spacer().frame(height: 2)
+                        Spacer().frame(height: 10)
                         HStack {
                             Button("Add Chord") {
                                 self.addChord()
@@ -56,7 +57,7 @@ struct ContentView: View {
                             .frame(width: CGFloat(self.buttonWidth))
                         }
                     }
-                    Spacer().frame(height: 2)
+                    Spacer().frame(height: 10)
                 }
                 .padding(.horizontal)
                 .fixedSize(horizontal: true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true)
